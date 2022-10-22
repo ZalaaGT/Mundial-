@@ -1,0 +1,872 @@
+*{
+    
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(img/fondo.jpg);
+   
+}
+.logo{
+    width: 120px;
+    height: 130px;
+   
+}
+.nav{
+    background-color: white;
+    height: 140px;
+}
+
+.nav__container{
+    display: flex;
+   height: 100%;
+   width: 90%;
+   margin: 0 auto;
+   justify-content: space-between;
+   align-items: center;
+}
+.nav__menu{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+.nav__label, .nav__input{
+    display: none;
+}
+.nav__item {
+    color: #7C1948;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 800;
+    --clippy:polygon(0 0, 0 0, 0 100%, 0 100%);
+   
+}
+.nav__item::after{
+    content: "";
+    display: block;
+    background-color: #7C1948;
+    width: 90%;
+    margin-top: 3px;
+    height: 3px;
+    clip-path: var(--clippy);
+    transition: clip-path .4s;
+}
+.nav__item:hover{
+   --clippy:polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+.fixture{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    
+}
+
+
+
+
+
+@media (max-width: 700px){
+    .nav__label{
+        display: block;
+        cursor: pointer;
+    }
+    .nav__menu{
+        position: fixed;
+        top: 140px;
+        bottom: 0;
+        background-color: blue;
+        width: 100%;
+        left: 0;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        clip-path: circle(0 at center);
+        transition: clip-path 1s ease-in-out;
+    }
+    .nav__input:checked + .nav__menu{
+        clip-path: circle(100% at center);
+
+
+    }
+}
+.fixture{
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    margin-right: 380px;
+    margin-left: 380px;
+    background-color: aliceblue;
+    justify-content: center;
+    padding: 10px 10px 10px 10px;
+    
+    
+    
+    
+    
+
+}
+.nazi{
+   display: flex;
+   flex-direction: row;
+   justify-content:flex-start;
+   
+    margin-top: 15px;
+    background-color:#D5D5CD;
+    
+    height: 50px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    font-size: 23px;
+    font-family: 'Sigmar One', cursive;
+    padding-left: 8px;
+    padding-right: 8px;
+    
+    
+
+}
+.fixture__item{
+    padding-top: 5px;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-bottom: 5px;
+    color: #7C1948;
+    text-decoration: none;
+   
+   
+
+}
+.grupo__1{
+    border-width: 2px;
+    margin-top: 20px;
+    width: max-content;
+}
+h2{
+    color: whitesmoke;
+    text-align: center;
+    background-color: #7C1948;
+}
+.banderas img{
+    width: 50px;
+    height: 40px;
+}
+.banderas{
+   margin-top: 5px;
+   margin-left: 5px;
+   margin-right: 5px;
+   margin-bottom: 5px;
+}
+.fixture__item a{
+    padding: 4px;
+}
+.flex{
+    display: flex;
+    flex-direction: row;
+}
+.fixture__item:hover{
+    background-color: #7C1948;
+    color: white;
+}
+.nazi:hover{
+    background-color: #7C1948;
+    color: white;
+
+}
+.banderas:hover{
+    transform: scale(1.20);
+    color: white;
+}
+.logo:hover{
+    transform: scale(1.30);
+    cursor: pointer;
+}
+
+.fixture__2{
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    margin-top: 0px;
+    margin-right: 380px;
+    margin-left: 380px;
+    margin-bottom: 0px;
+    background-color: aliceblue;
+    justify-content: center;
+    padding: 10px 10px 10px 10px;
+    
+    
+}
+h2:hover{
+    transform: scale(1.20);
+}
+.nazi:hover{
+    transform: scale(1.15);
+}
+.table{
+    background-color: aliceblue;
+     height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-left: 170px;
+    margin-right: 170px;
+    border-style:outset;
+    border-width: 10px;
+    border-color: whitesmoke;
+    
+    
+    
+   
+    
+}
+.table h3{
+    text-align: center;
+    font-size:40px;
+    color: #7C1948;
+    font-family: 'Roboto', cursive;
+    
+}
+.tabla{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    margin-left:200px;
+    margin-bottom: 10px;
+    margin-right: 200px;
+    
+}
+.selecciones{
+
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left:30px;
+    padding-right: 30px;
+    border-width: 10px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #7C1948;
+   
+    
+
+}
+.tabla .selecciones h2{
+
+   background-color: whitesmoke;
+   color: black;
+   text-align: center;
+   font-family: 'Roboto';
+   --clippy:polygon(0 0, 0 0, 0 100%, 0 100%);
+   font-size: 30px;
+   
+   
+}
+.tabla .selecciones h2::after{
+    content: "";
+    display: block;
+    background-color: #7C1948;
+    width: 80%;
+    
+    height: 3px;
+    clip-path: var(--clippy);
+    transition: clip-path .4s;
+
+
+}
+.tabla .selecciones h2:hover{
+    --clippy:polygon(0 0, 100% 0, 100% 100%, 0 100%);
+ }
+ .tabla .selecciones p:hover{
+    background-color: #7C1948;
+    color: whitesmoke;
+    cursor: pointer;
+    width: 200px;
+    text-align: center;
+}
+.tabla .selecciones p{
+    letter-spacing:1.5px;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    padding-top: 10px;
+    padding-bottom:10px;
+    
+    
+    
+   
+}
+.puntos{
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left:30px;
+    padding-right: 30px;
+    border-width: 10px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #7C1948;
+   
+    
+
+}
+.tabla .puntos h2{
+    background-color: whitesmoke;
+    color: black;
+    text-align: center;
+    font-family: 'Roboto';
+    --clippy:polygon(0 0, 0 0, 0 100%, 0 100%);
+    font-size: 30px;
+    
+ }
+ .tabla .puntos p{
+    letter-spacing:2px;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    padding-top: 10px;
+    padding-bottom:10px;
+    
+}
+
+.tabla .puntos h2::after{
+    content: "";
+    display: block;
+    background-color: #7C1948;
+    width: 90%;
+    margin-top: 3px;
+    height: 3px;
+    clip-path: var(--clippy);
+    transition: clip-path .4s;
+
+
+}
+.tabla .puntos h2:hover{
+    --clippy:polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    
+ }
+ .tabla .puntos p:hover{
+    background-color: #7C1948;
+    color: whitesmoke;
+    cursor: pointer;
+  
+}
+
+ .posicion{
+
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left:30px;
+    padding-right: 30px;
+    border-width: 10px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #7C1948;
+   
+    
+
+}
+.tabla .posicion h2{
+
+   background-color: whitesmoke;
+   color: black;
+   text-align: center;
+   font-family: 'Roboto';
+   --clippy:polygon(0 0, 0 0, 0 100%, 0 100%);
+   font-size: 30px;
+  
+   
+   
+}
+.tabla .posicion h2::after{
+    content: "";
+    display: block;
+    background-color: #7C1948;
+    width: 90%;
+    margin-top: 3px;
+    height: 3px;
+    clip-path: var(--clippy);
+    transition: clip-path .4s;
+
+
+}
+.tabla .posicion h2:hover{
+    --clippy:polygon(0 0, 100% 0, 100% 100%, 0 100%);
+ }
+.tabla .posicion h3{
+    letter-spacing:2px;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    padding-top: 10px;
+    padding-bottom:10px;
+    
+    
+   
+}
+
+.tabla .posicion h3:hover{
+    background-color: #7C1948;
+    color: whitesmoke;
+    width: 100px;
+    text-align: center;
+    cursor: pointer;
+}
+.nana{
+    border:#7C1948  20px ridge;
+    border-radius: 10px;
+    margin-left: 380px;
+    margin-right: 380px;
+   background-color: whitesmoke;
+   
+}
+.simbolos{
+    margin-top: 80px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    color:#7C1948;
+    font-size: 40px;
+    font-family: 'Roboto';
+    border: solid 3px white;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 50px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 80px;
+    
+}
+
+    
+/*Cards*/
+.container-card{
+    
+	width: 100%;
+	display: flex;
+    justify-content: space-between;
+	
+	
+}
+.title-cards{
+	width: 100%;
+	max-width: 1080px;
+	margin: auto;
+	padding: 20px;
+	margin-top: 20px;
+	text-align: center;
+	color: #7a7a7a;
+}
+.card{
+	width: 100%;
+	margin-top: 20px;
+    margin-right: 70px;
+    margin-left: 70px;
+    margin-bottom: 20px;
+	border-radius: 6px;
+	overflow: hidden;
+	background:#fff;
+	box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+	transition: all 400ms ease-out;
+	
+}
+.card:hover{
+	box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+	transform: translateY(-3%);
+}
+.card img{
+	width: 100%;
+	height: 300px;
+}
+.card .contenido-card{
+	padding: 10px;
+	text-align: center;
+    font-family:'Roboto', cursive; 
+    font-weight: 200;
+}
+.card .contenido-card h3{
+    font-family: 'Roboto';
+    font-size: 29px;
+	margin-bottom: 15px;
+	color: black;
+}
+.card .contenido-card p{
+	line-height: 1.7;
+	color: #7C1948;
+	font-size: 18px;
+	margin-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+   text-align: justify;
+}
+
+@media only screen and (min-width:320px) and (max-width:768px){
+	.container-card{
+		flex-wrap: wrap;
+	}
+	.card{
+		margin: 15px;
+	}
+}
+.main{
+    border:#7C1948  20px ridge;
+    border-radius: 10px;
+    margin-left: 380px;
+    margin-right: 380px;
+    background-color: whitesmoke;
+   
+}
+
+.Seleccion{
+    display: flex;
+    justify-content: flex-end;
+   
+   
+}
+.cancha{
+    margin-top: 50px;
+    height: 680px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.cancha img{
+    width: 630px;
+    height: 880px;
+}
+
+   
+.arquero{
+    position: absolute;
+    margin-top: 755px;
+    margin-right: 5px;
+    height: 120px;
+    width: 120px;
+    background-repeat: no-repeat;
+    
+    background-size: 100% 100%;
+}
+.arquero:hover{
+    transform: scale(1.20);
+}
+.ld{
+    position: absolute;
+    margin-top: 600px;
+    margin-right: -460px;
+    height: 80px;
+    width: 80px;
+    background-repeat: no-repeat;
+    background-position: 50% 7%;
+  
+    background-size: 100% auto;
+}
+.ld:hover{
+    transform: scale(1.20);
+    cursor: pointer;
+}
+.dfd{
+    position: absolute;
+    margin-top: 645px;
+    margin-right: -150px;
+    height: 80px;
+    width: 80px;
+    background-repeat: no-repeat;
+    background-position: 20% 5%;
+    
+    background-size: 100% auto;
+}
+.dfd:hover{
+    transform: scale(1.20);
+    cursor: pointer;
+
+}
+.dfi{
+    position: absolute;
+    margin-top: 645px;
+    margin-right: 120px;
+    height: 80px;
+    width: 80px;
+    background-repeat: no-repeat;
+    background-position: 50% 5%;
+    background-size: 100% auto;
+   
+}
+.dfi:hover{
+    transform: scale(1.20);
+    cursor: pointer;
+}
+.li{
+    position: absolute;
+    margin-top: 600px;
+    margin-right: 445px;
+    height: 90px;
+    width: 90px;
+    background-repeat: no-repeat;
+    background-position: 50% 5%;
+    background-size: 100% auto;
+}
+.li:hover{
+    transform: scale(1.20);
+    cursor: pointer;
+}
+.mcd{
+    position: absolute;
+    margin-top: 473px;
+    margin-right: 5px;
+    height: 90px;
+    width: 90px;
+    background-repeat: no-repeat;
+    background-size: 100% ;
+}
+
+.mcd:hover{
+    transform: scale(1.20);
+    cursor: pointer;
+}
+
+.mci{
+    position: absolute;
+    margin-top: 350px;
+    margin-right: 245px;
+    height: 80px;
+    width: 80px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 110% 100%;
+}
+.mci:hover{
+    transform: scale(1.20);
+    cursor: pointer;
+}
+.mc{
+    position: absolute;
+    margin-top: 350px;
+    margin-right: -245px;
+    height: 80px;
+    width: 80px;
+    background-repeat: no-repeat;
+    background-position: 50% 5%;
+    background-size: 100% ;
+}
+.mc:hover{
+    transform: scale(1.20);
+    cursor: pointer;
+}
+.ed{
+    position: absolute;
+    margin-top: 90px;
+    margin-right: -323px;
+    height: 90px;
+    width: 90px;
+    background-repeat: no-repeat;
+    background-position: 50% 30%;
+    background-size: 100% auto;
+}
+.ed:hover{
+    transform: scale(1.20);
+    cursor: pointer;
+}
+.dc{
+    position: absolute;
+    margin-top: 45px;
+    margin-right: 4px;
+    height: 85px;
+    width: 85px;
+    background-repeat: no-repeat;
+    background-position: 50% 5%;
+    background-size: 100%;
+}
+.dc:hover{
+    transform: scale(1.20);
+    cursor: pointer;
+}
+.ei{
+    position: absolute;
+    margin-top: 100px;
+    margin-right: 333px;
+    height: 83px;
+    width: 83px;
+    background-repeat: no-repeat;
+    background-position: 50% 5% ;
+    background-size: 100% auto;
+}
+.ei:hover{
+    transform: scale(1.20);
+    cursor: pointer;
+}
+
+h4{
+    text-align: center;
+   background-color: #7C1948;
+   color: white;
+   font-family: 'Inter', sans-serif;
+   border-radius: 20%;
+   
+}
+
+
+
+
+
+
+ h1{
+    margin: 20PX;
+    font-size: 40px;
+    font-family: 'Roboto';
+    color: #7C1948;
+    background-color: white;
+    border: #7C1948 solid 5px;
+}
+.card_player{
+    width: 27%;
+	border-radius: 6px;
+	overflow: hidden;
+	background:#640016;
+	box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+	transition: all 400ms ease-out;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    border: #fff solid 5px;
+   
+
+}
+.card_player:hover{
+    transform: scale(1.10);
+
+
+}
+ .card_player .contenido-card-player{
+    padding: 10px;
+	text-align: center;
+    font-family:'Roboto', cursive; 
+    font-weight: 200;
+    
+
+}
+.card_player img{
+    width: 100%;
+    height: auto;
+ 
+}
+.card_player .contenido-card-player h3{
+    font-family: 'Roboto';
+    font-size: 29px;
+	margin-bottom: 15px;
+	color: black;
+   
+}
+.card_player .contenido-card-player li{
+    font-family: 'Roboto';
+	color: #7C1948;
+	font-size: 20px;
+	margin-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: justify;
+    border: #7C1948 solid 2px  ;
+    border-radius: 5%;
+    
+    
+   
+    
+}
+.contenido-card li{
+    font-family: 'Inter';
+	color: #fff;
+	font-size: 18px;
+    font-weight: 300;
+	
+    padding: 13px;
+    text-align: start;
+   
+    border-bottom: #fff solid 1px;
+    background-color: #640016;
+    list-style: none;
+    
+    
+    
+    
+   
+    
+}
+.jugadores{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 30%;
+    margin-top: 0%;
+}
+.conte{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+}
+.left h1{
+    text-align: center;
+}
+.contain_card{
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   align-content: flex-start;
+   padding: 10px;
+
+}
+
+
+.arqueros{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: #ffff solid 5px;
+   background-color: #640016;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    
+}
+h5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.posiciones{
+
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        color: #fff;
+        font-size: 34px;
+        font-family: 'inter';
+        border: #fff solid 5px;
+         margin-top: 20px;
+        margin-left: 50px;
+        margin-right: 50px;
+        padding: 0%;
+        font-style: italic;
+        border-bottom: #fff solid 0px;
+        background-color: #8A0124;
+        padding: 5px;
+
+
+}
+.argentina_q{
+    text-align: center;
+    margin-top: 10px;
+}
